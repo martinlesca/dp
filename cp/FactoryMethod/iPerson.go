@@ -1,8 +1,8 @@
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Printf("Nome do fulano: ")
-	fmt.Println()
+type IPerson interface {
+	setNome(nome string)
+	setEmail(email string)
+	getNome() string
+	getEmail() string
 }
